@@ -1,0 +1,88 @@
+@import url("base.css");
+
+/* LOGIN --------------- */
+
+.login {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login--image figure {
+  width: 50vw;
+  height: 100%;
+  background-color: #fe5f55;
+  background-image: url("/assets/images/become-teacher.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0.8);
+}
+
+.login--form-container {
+  display: grid;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-form h4 {
+  text-align: center;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.login-form h4 {
+  margin: 2rem;
+}
+.login-form form input:not([type="submit"]) {
+  margin-bottom: 1rem;
+  height: 48px;
+  padding: 0 0.5rem;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+input,
+label {
+  width: 300px;
+}
+
+input[type="submit"] {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+}
+
+.login-form form input:focus:not([type="submit"]),
+.login-form form input:valid:not([type="submit"]) {
+  background-color: unset;
+  border: 1px solid black;
+}
+
+.login-form .register {
+  padding: 1rem;
+}
+
+.login-form .register a:hover {
+  text-decoration: underline;
+  color: revert;
+}
+
+/* LOGIN --------------- */

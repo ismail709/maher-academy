@@ -1,0 +1,116 @@
+@import url("base.css");
+
+.explore-btn {
+  margin: 0 auto;
+}
+
+section > h3 {
+  text-align: center;
+}
+
+/* HERO SECTION ---------------------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .img {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  place-self: end;
+}
+
+.hero .img figure {
+  width: 300px;
+  height: 400px;
+  background-image: url("/assets/images/subjects.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* HERO SECTION ---------------------- */
+
+/* SUBJECTS SECTION ---------------------- */
+
+.subject-card {
+  display: flex;
+  gap: 1rem;
+  width: 250px;
+  padding: var(--small-padding);
+  border-radius: 8px;
+  transition: all var(--transition-duration) ease-in-out;
+}
+
+.subject-card:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, var(--shadow-opacity));
+}
+
+.subject-card--icon figure {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-red);
+  background-image: url("/assets/images/math_icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+a.subject-card:nth-child(2n) figure {
+  background-color: var(--color-blue);
+}
+
+a.subject-card:nth-child(2) figure {
+  background-image: url("/assets/images/physics_icon.png");
+}
+a.subject-card:nth-child(3) figure {
+  background-image: url("/assets/images/geography_icon.png");
+}
+a.subject-card:nth-child(4) figure {
+  background-image: url("/assets/images/chemistry_icon.png");
+}
+a.subject-card:nth-child(5) figure {
+  background-image: url("/assets/images/coding_icon.png");
+}
+a.subject-card:nth-child(6) figure {
+  background-image: url("/assets/images/literature_icon.png");
+}
+
+.subject-card--title span {
+  font-size: var(--small-text);
+}
+
+.subjects-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 800px;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.other-subjects {
+  columns: 3;
+}
+
+.other-subjects ul {
+  list-style-type: none;
+}
+
+.other-subjects ul li {
+  margin-bottom: 1rem;
+}
+
+.explore-btn {
+  margin: 0 auto;
+}
+
+/* SUBJECTS SECTION ---------------------- */
